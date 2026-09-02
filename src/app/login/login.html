@@ -1,1 +1,38 @@
-<p>login works!</p>
+<main class="login-container">
+  <div class="login-wrapper">
+    <!-- Imagem da Ranger (Lado Esquerdo no Desktop) -->
+    <div class="banner-section">
+      <img src="/img/ranger.png" alt="Ranger" class="banner-img">
+    </div>
+
+    <!-- Formulário de Login (Lado Direito) -->
+    <div class="form-section">
+      <img src="/img/ford.png" alt="Logo Ford" class="logo-img">
+      
+      <h2 class="form-title">Boas-Vindas</h2>
+
+      <form action="#" method="POST" class="login-form">
+        <div class="input-group">
+          <label for="email" class="input-label">Insira seu e-mail</label>
+          <input id="email" type="email" name="email" required autocomplete="email" class="form-input">
+        </div>
+
+        <div class="input-group">
+          <label for="password" class="input-label">Insira sua senha</label>
+          <input id="password" type="password" name="password" required autocomplete="current-password" class="form-input">
+        </div>
+
+        <!-- Componente Switch / Toggle -->
+        <div class="switch-group">
+          <p>Logar automaticamente</p>
+          <label for="hs-basic-usage" class="toggle-switch">
+            <input type="checkbox" id="hs-basic-usage" class="toggle-input">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+</main>
