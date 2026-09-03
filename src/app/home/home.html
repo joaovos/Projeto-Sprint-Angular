@@ -1,5 +1,27 @@
-<div class="fundo">
-<div class="janela"> Sistemas de Dados Ford
-    <div class="subJanela">Seja bem-vindo(a)!</div>
+<div class="menu-overlay" [class.open]="isMenuOpen" (click)="toggleMenu()"></div>
+
+<nav class="sidebar" [class.open]="isMenuOpen">
+
+    <ul class="sidebar-links">
+        <img src="/img/ford.png" alt="Logo Ford" class="logo-img">
+        <li>
+            <span> Home</span>
+        </li>
+        <li>
+            <span> Dashboard</span>
+        </li>
+    </ul>
+</nav>
+
+<div>
+    <div>
+        <span class="material-symbols-outlined btn-hamburguer" (click)="toggleMenu()">menu</span>
+    </div>
 </div>
+
+<div class="fundo">
+
+    <div class="janela"> Sistemas de Dados Ford
+        <div class="subJanela">Seja bem-vindo(a)!</div>
+    </div>
 </div>
