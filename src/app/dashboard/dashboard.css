@@ -1,0 +1,217 @@
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.barra-topo {
+  padding: 16px 20px 0 20px;
+}
+
+.botao-hamburguer {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.titulo-dashboard {
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(14, 14, 156);
+  margin: 10px 0 24px 0;
+}
+
+
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100vh;
+  background-color: #1e293b;
+  color: #ffffff;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-lateral.open {
+  left: 0;
+}
+
+.links-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.links-menu li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 15px;
+}
+
+.links-menu li:hover {
+  background-color: #334155;
+}
+
+.fundo-escuro {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 999;
+}
+
+.fundo-escuro.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.container-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card-item {
+  border: 2px solid rgb(95, 89, 89);
+  flex: 1;
+  min-width: 180px;
+  max-width: 220px;
+  background-color: #ffffff;
+}
+
+.card-cabecalho {
+  background-color: #827582a7;
+  padding: 8px 10px;
+}
+
+
+.card-cabecalho p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  text-align: left;
+}
+
+.card-corpo {
+  background-color: #ffffff;
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.valor-card {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  color: rgb(14, 14, 156);
+}
+
+.unidade-card {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  color: #666666;
+}
+
+.select-veiculo {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #a6a6a6;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+.container-imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.imagem-veiculo {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.container-tabela {
+  width: 100%;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.cabecalho-tabela {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1fr 1fr 1fr;
+  background-color: #004080;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 0;
+  border-radius: 4px 4px 0 0;
+}
+
+.linha-tabela {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1fr 1fr 1fr;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 12px 0;
+  font-size: 14px;
+  color: #111111;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+}
+
+.coluna-tabela {
+  padding: 0 10px;
+  text-align: left;
+}
+
+.coluna-tabela.negrito {
+  font-weight: 600;
+}
+
+.campo-vin {
+  width: 100%;
+  padding: 4px 6px;
+  border: 1px solid #a6a6a6;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #333333;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.rodape-tabela {
+  height: 14px;
+  background-color: #004080;
+  border-radius: 0 0 4px 4px;
+}

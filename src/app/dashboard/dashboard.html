@@ -1,1 +1,97 @@
-<p>dashboard works!</p>
+<div class="fundo-escuro" [class.open]="isMenuOpen" (click)="toggleMenu()"></div>
+
+<nav class="menu-lateral" [class.open]="isMenuOpen">
+  <ul class="links-menu">
+    <img src="/img/ford.png" alt="Logo Ford" class="logo-ford">
+    <li>
+      <span>Home</span>
+    </li>
+    <li>
+      <span>Dashboard</span>
+    </li>
+  </ul>
+</nav>
+
+<div class="barra-topo">
+  <span class="material-symbols-outlined botao-hamburguer" (click)="toggleMenu()">menu</span>
+</div>
+
+<div>
+  <h1 class="titulo-dashboard">Dashboard FORD</h1>
+</div>
+
+<div class="container-cards">
+
+  <div class="card-item">
+    <div class="card-cabecalho">
+      <p>Veículo</p>
+    </div>
+    <div class="card-corpo">
+      <select class="select-veiculo">
+        <option value="ranger">Ranger</option>
+        <option value="mustang">Mustang</option>
+        <option value="territory">Territory</option>
+        <option value="bronco">Bronco Sport</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="card-item">
+    <div class="card-cabecalho">
+      <p>Total de vendas</p>
+    </div>
+    <div class="card-corpo">
+      <p class="valor-card">1500</p>
+      <p class="unidade-card">Unid.</p>
+    </div>
+  </div>
+
+  <div class="card-item">
+    <div class="card-cabecalho">
+      <p>Conectados</p>
+    </div>
+    <div class="card-corpo">
+      <p class="valor-card">500</p>
+      <p class="unidade-card">Unid.</p>
+    </div>
+  </div>
+
+  <div class="card-item">
+    <div class="card-cabecalho">
+      <p>Update Software</p>
+    </div>
+    <div class="card-corpo">
+      <p class="valor-card">750</p>
+      <p class="unidade-card">Unid.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="container-imagem">
+  <img src="/img/mustang.png" alt="Mustang" class="imagem-veiculo">
+</div>
+
+<div class="container-tabela">
+  <div class="cabecalho-tabela">
+    <div class="coluna-tabela">Código - Vin</div>
+    <div class="coluna-tabela">Odômetro</div>
+    <div class="coluna-tabela">Nível de Combustível</div>
+    <div class="coluna-tabela">Status</div>
+    <div class="coluna-tabela">Lat.</div>
+    <div class="coluna-tabela">Long.</div>
+  </div>
+
+  <div class="linha-tabela">
+    <div class="coluna-tabela">
+      <input type="text" value="2FRHDUYS2Y63NHD22455" class="campo-vin">
+    </div>
+    <div class="coluna-tabela negrito">50000 Km</div>
+    <div class="coluna-tabela negrito">90 %</div>
+    <div class="coluna-tabela negrito">on</div>
+    <div class="coluna-tabela negrito">-12,2322</div>
+    <div class="coluna-tabela negrito">-35,2314</div>
+  </div>
+
+  <div class="rodape-tabela"></div>
+</div>
