@@ -8,15 +8,15 @@
       <img src="/img/ford.png" alt="Logo Ford" class="logo-img">
       <h2 class="form-title">Boas-Vindas</h2>
 
-      <form action="#" method="POST" class="login-form">
+      <form action="#" method="POST" class="login-form" #loginForm="ngForm" (ngSubmit)="login()">
         <div class="input-group">
           <label for="email" class="input-label">Insira seu e-mail</label>
-          <input id="email" type="email" name="email" required autocomplete="email" class="form-input">
+          <input id="email" type="email" name="email" required autocomplete="email" class="form-input " [(ngModel)]="usuario.nome">
         </div>
 
         <div class="input-group">
           <label for="password" class="input-label">Insira sua senha</label>
-          <input id="password" type="password" name="password" required autocomplete="current-password" class="form-input">
+          <input id="password" type="password" name="password" required autocomplete="current-password" class="form-input" [(ngModel)]="usuario.senha">
         </div>
 
         <div class="switch-group">

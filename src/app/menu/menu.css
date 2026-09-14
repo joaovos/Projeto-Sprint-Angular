@@ -1,0 +1,80 @@
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.barra-topo {
+  padding: 16px 20px 0 20px;
+}
+
+.botao-hamburguer {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100vh;
+  background-color: #1e293b;
+  color: #ffffff;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-lateral.open {
+  left: 0;
+}
+
+.logo-ford {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+.links-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.links-menu li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 15px;
+}
+
+.links-menu li:hover {
+  background-color: #334155;
+}
+
+.fundo-escuro {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 999;
+}
+
+.fundo-escuro.open {
+  opacity: 1;
+  visibility: visible;
+}

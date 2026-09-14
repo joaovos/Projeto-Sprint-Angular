@@ -1,0 +1,17 @@
+<div class="fundo-escuro" [class.open]="isMenuOpen" (click)="toggleMenu()"></div>
+
+<nav class="menu-lateral" [class.open]="isMenuOpen">
+  <ul class="links-menu">
+    <img src="/img/ford.png" alt="Logo Ford" class="logo-ford">
+    <li>
+      <span>Home</span>
+    </li>
+    <li>
+      <span>Dashboard</span>
+    </li>
+  </ul>
+</nav>
+
+<div class="barra-topo">
+  <span class="material-symbols-outlined botao-hamburguer" (click)="toggleMenu()">menu</span>
+</div>
