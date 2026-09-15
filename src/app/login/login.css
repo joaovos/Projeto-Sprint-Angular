@@ -192,3 +192,45 @@
   outline: 2px solid #4f46e5;
   outline-offset: 2px;
 }
+
+@media (max-width: 1023px) {
+  .login-wrapper {
+    min-height: 100vh;
+  }
+
+  .banner-section {
+    padding: 1.5rem 1rem 0;
+  }
+
+  .banner-img {
+    max-width: 420px;
+  }
+
+  .form-section {
+    padding-top: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .form-section {
+    padding: 2rem 1rem;
+  }
+
+  .logo-img {
+    width: 150px;
+  }
+
+  .form-title {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+  }
+
+  .login-form {
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .btn-submit {
+    padding: 0.75rem 1rem;
+  }
+}

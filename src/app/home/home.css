@@ -46,3 +46,48 @@
   font-weight: bold;
   color: #fbfafa;
 }
+
+@media (max-width: 768px) {
+  .fundo {
+    background-size: cover;
+    padding: 20px 12px;
+  }
+
+  .janela {
+    min-height: auto;
+    padding: 20px 16px;
+    max-width: 100%;
+  }
+
+  .titulo-janela {
+    font-size: 18px;
+  }
+
+  .subJanela {
+    min-height: 220px;
+    padding: 24px 18px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fundo {
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+
+  .janela {
+    gap: 14px;
+  }
+
+  .titulo-janela {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .subJanela {
+    min-height: 180px;
+    font-size: 18px;
+    text-align: center;
+  }
+}

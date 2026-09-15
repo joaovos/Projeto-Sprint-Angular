@@ -3,11 +3,17 @@
 <nav class="menu-lateral" [class.open]="isMenuOpen">
   <ul class="links-menu">
     <img src="/img/ford.png" alt="Logo Ford" class="logo-ford">
+
     <li>
-      <span>Home</span>
+      <button type="button" routerLink="/home" class="menu-button">Home</button>
     </li>
+
     <li>
-      <span>Dashboard</span>
+      <button type="button" routerLink="/dashboard" class="menu-button">Dashboard</button>
+    </li>
+
+    <li>
+      <button type="button" (click)="logout()" class="menu-button">Logout</button>
     </li>
   </ul>
 </nav>
